@@ -1,6 +1,12 @@
 body {
   width: 200px;
   height: 300px;
-  background-color: #CD5C5C; }
+  background-color: #CD5C5C;
+  overflow: auto; }
+  body .main-app #make-todo {
+    display: block;
+    width: 100%;
+    margin: 10px auto;
+    height: 50px; }
 
 /*# sourceMappingURL=main.css.map */
