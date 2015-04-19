@@ -9,7 +9,7 @@
     }
   ],
   "icons": {
-    "32":"app/favicon.png"
+    "32":"app/favicon.ico"
   },
   "background": {
 
@@ -20,7 +20,7 @@
 
   "browser_action": {
     "default_popup": "app/index.html",
-    "default_icon":"app/favicon.png"
+    "default_icon":"app/favicon.ico"
   }
 
 }
