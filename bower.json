@@ -1,0 +1,12 @@
+{
+  "name": "chrome-extension",
+  "version": "0.0.0",
+  "homepage": "https://github.com/mohsom/chrome-extension",
+  "authors": [
+    "mohsom <volodya.skalskyi@gmail.com>"
+  ],
+  "license": "MIT",
+  "dependencies":{
+    "jquery":"latest"
+  }
+}
