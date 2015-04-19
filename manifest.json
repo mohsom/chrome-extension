@@ -2,10 +2,6 @@
   "manifest_version": 2,
   "name": "Noname",
   "version": "1.0",
-
-  "icons": {
-      "app/favicon":"true"
-  },
   "content_scripts": [
     {
       "matches": [ "*://*/*" ],
@@ -20,7 +16,8 @@
   ],
 
   "browser_action": {
-    "default_popup": "app/index.html"
+    "default_popup": "app/index.html",
+    "default_icon":"app/favicon.png"
   }
 
 }
