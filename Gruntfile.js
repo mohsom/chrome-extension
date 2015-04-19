@@ -33,6 +33,10 @@ module.exports = function (grunt) {
         files: ['bower.json'],
         tasks: ['wiredep']
       },
+      sass:{
+        files:['app/styles/sass/main.scss'],
+        tasks:["sass"]
+      },
       js: {
         files: ['<%= yeoman.app %>/scripts/{,*/}*.js'],
         tasks: ['newer:jshint:all'],
@@ -198,8 +202,11 @@ module.exports = function (grunt) {
           }
       },
       sass: {
-        src: ['<%= yeoman.app %>/styles/{,*/}*.{scss,sass}'],
-        ignorePath: /(\.\.\/){1,2}bower_components\//
+        dist: {
+          files: {
+            'app/styles/css/main.css': 'app/styles/sass/main.scss'
+          }
+        }
       }
     },
 
@@ -460,7 +467,7 @@ module.exports = function (grunt) {
   ]);
   grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.registerTask('build', [
-    'sass'
+    'sass','watch'
   ]);
 
   grunt.registerTask('default', [
