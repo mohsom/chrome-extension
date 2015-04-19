@@ -9,11 +9,11 @@
   "content_scripts": [
     {
       "matches": [ "*://*/*" ],
-      "js": [ "script.js" ]
+      "js": [ "js/script.js" ]
     }
   ],
   "background": {
-    "scripts": ["background.js"]
+    "scripts": ["js/background.js"]
   },
   "permissions": [
 
