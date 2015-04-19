@@ -419,6 +419,13 @@ module.exports = function (grunt) {
         configFile: 'test/karma.conf.js',
         singleRun: true
       }
+    },
+    sass: {
+      dist: {
+        files: {
+          'app/styles/css/main.css': 'app/styles/sass/main.scss'
+        }
+      }
     }
   });
 
@@ -451,22 +458,9 @@ module.exports = function (grunt) {
     'connect:test',
     'karma'
   ]);
-
+  grunt.loadNpmTasks('grunt-contrib-sass');
   grunt.registerTask('build', [
-    'clean:dist',
-    'wiredep',
-    'useminPrepare',
-    'concurrent:dist',
-    'autoprefixer',
-    'concat',
-    'ngAnnotate',
-    'copy:dist',
-    'cdnify',
-    'cssmin',
-    'uglify',
-    'filerev',
-    'usemin',
-    'htmlmin'
+    'sass'
   ]);
 
   grunt.registerTask('default', [

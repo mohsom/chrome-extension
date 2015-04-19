@@ -4,7 +4,7 @@
   "version": "1.0",
 
   "icons": {
-      "app/favicon.ico":"true"
+      "app/favicon":"true"
   },
   "content_scripts": [
     {
