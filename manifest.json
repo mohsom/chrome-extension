@@ -8,6 +8,9 @@
       "js": [ "app/scripts/app.js" ]
     }
   ],
+  "icons": {
+    "32":"app/favicon.png"
+  },
   "background": {
 
   },
