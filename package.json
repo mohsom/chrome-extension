@@ -2,6 +2,7 @@
   "name": "chrome-extention",
   "version": "0.0.1",
   "devDependencies":{
-    "bower":"latest"
+    "bower":"latest",
+    "yo":"latest"
   }
 }
