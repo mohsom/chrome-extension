@@ -9,7 +9,7 @@
   "content_scripts": [
     {
       "matches": [ "*://*/*" ],
-      "js": [ "/app/scripts/app.js" ]
+      "js": [ "app/scripts/app.js" ]
     }
   ],
   "background": {
